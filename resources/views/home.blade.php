@@ -14,9 +14,9 @@
                 <div class="pr-3" style="padding: 1rem"><strong>212</strong> following</div>
             </div>
             <div>
-                <div class="pt-4 font-weight-bold"> name </div>
-                <div> biography info </div>
-                <div><a href=""> website link </a></div>
+                <div class="pt-4 font-weight-bold"> {{ $user->profile->title }} </div>
+                <div> {{ $user->profile->description }}</div>
+                <div><a href=""> {{ $user->profile->url }} </a></div>
             </div>
         </div>
         <div class="row pt-5">
