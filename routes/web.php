@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/p/create', [App\Http\Controllers\PostsController::class, 'create']);
+Route::get('/p/{post}', [App\Http\Controllers\PostsController::class, 'show']);
+
 Route::post('/p', [App\Http\Controllers\PostsController::class, 'store']);
 
 
