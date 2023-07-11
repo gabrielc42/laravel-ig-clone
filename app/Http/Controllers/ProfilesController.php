@@ -38,7 +38,6 @@ class ProfilesController extends Controller
             $image->save();
         }
 
-        dd($data);
         auth()->user()->profile->update(array_merge(
             $data, 
             [
