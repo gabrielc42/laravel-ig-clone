@@ -1,30 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Example() {
+function FollowButton() {
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Component</div>
-
-                        <div className="card-body">I'm an example component!</div>
-                    </div>
-                </div>
+        <template>
+            <div>
+                <button class="btn btn-primary m-4">Follow</button>
             </div>
-        </div>
+        </template>
     );
 }
 
-export default Example;
+export default FollowButton;
 
-if (document.getElementById('example')) {
-    const Index = ReactDOM.createRoot(document.getElementById("example"));
+if (document.getElementById('follow-button')) {
+    const Index = ReactDOM.createRoot(document.getElementById("follow-button"));
 
     Index.render(
         <React.StrictMode>
-            <Example/>
+            <FollowButton/>
         </React.StrictMode>
     )
 }
