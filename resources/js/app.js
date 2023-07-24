@@ -12,4 +12,6 @@ import './bootstrap';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import './components/Example';
+import './components/FollowButton.jsx';
+
+// Vue.component('follow-button', require('./components/FollowButton.vue').default);
